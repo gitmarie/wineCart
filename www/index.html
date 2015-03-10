@@ -28,6 +28,26 @@
         <h1 class="title">Ionic Blank Starter</h1>
       </ion-header-bar>
       <ion-content>
+        <div id="products">
+          <ul>
+	    <li>
+              <div class="product-image">
+                <img src="images/wine1.jpg" alt="" />
+              </div>
+              <div class="product-description" data-name="Wine #1" data-price="5">
+                      <h3 class="product-name">Wine #1</h3>
+                      <p class="product-price">&euro; 5</p>
+                      <form class="add-to-cart" action="cart.html" method="post">
+                              <div>
+                                      <label for="qty-1">Quantity</label>
+                                      <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                              </div>
+                              <p><input type="submit" value="Add to cart" class="btn" /></p>
+                      </form>
+              </div>
+          </li>
+          </ul>
+        </div>
       </ion-content>
     </ion-pane>
   </body>

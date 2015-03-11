@@ -7,6 +7,8 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/ionicons.css" rel="stylesheet">
+    <link href="css/ionicons.min.css" rel="stylesheet">
 
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
@@ -20,35 +22,120 @@
 
     <!-- your app's js -->
     <script src="js/app.js"></script>
+    
+    <!-- shop js -->
+    <script type="text/javascript" src="js/jquery.shop.js"></script>
   </head>
   <body ng-app="starter">
 
     <ion-pane>
       <ion-header-bar class="bar-stable">
-        <h1 class="title">Ionic Blank Starter</h1>
+        <h1 class="title">Winery Shopping Cart</h1>
       </ion-header-bar>
+      
       <ion-content>
         <div id="products">
-          <ul>
-	    <li>
+          
+          <div class="list card">
+            <div class="item item-avatar">
+              <img src="images/wine1.jpg" alt="wine" />
+              <h2>Red Wine</h2>
+              <p>Merlot</p>
+            </div>
+          
+            <div class="item item-body">
               <div class="product-image">
-                <img src="images/wine1.jpg" alt="" />
+                <img src="images/wine1.jpg" alt="wine" />
               </div>
+              <p>
+                This is a "Fantastic" Red Wine. Smooth velvety taste laced with fruity tannins and
+                sumtuous oak. It will delight any lamb, steak or pork.
+              </p>
+              
               <div class="product-description" data-name="Wine #1" data-price="5">
-                      <h3 class="product-name">Wine #1</h3>
-                      <p class="product-price">&euro; 5</p>
-                      <form class="add-to-cart" action="cart.html" method="post">
-                              <div>
-                                      <label for="qty-1">Quantity</label>
-                                      <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
-                              </div>
-                              <p><input type="submit" value="Add to cart" class="btn" /></p>
-                      </form>
+                <h3 class="product-name">Merlot from Spain</h3>
+                <p class="product-price">&euro; 5</p>
+                <form class="add-to-cart" action="cart.html" method="post">
+                  <div>
+                    <label for="qty-1">Quantity</label>
+                    <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                  </div>
+                  <button class="button button-full button-assertive" type="submit" value="Add to cart">Add to cart</button>
+                </form>
               </div>
-          </li>
-          </ul>
-        </div>
+            </div><!-- end of item body -->
+          </div><!-- end of card -->
+          
+          <div class="list card">
+            <div class="item item-avatar">
+              <img src="images/wine2.jpg" alt="wine" />
+              <h2>Red Wine</h2>
+              <p>Malbec</p>
+            </div>
+          
+            <div class="item item-body">
+              <div class="product-image">
+                <img src="images/wine2.jpg" alt="wine" />
+              </div>
+              <p>
+                This is a "Beautiful" Malbec Wine. Smooth velvety taste laced with fruity tannins and
+                sumtuous oak. It will delight any lamb, steak or pork.
+              </p>
+              
+              <div class="product-description" data-name="Wine #1" data-price="5">
+                <h3 class="product-name">Malbec from France</h3>
+                <p class="product-price">&euro; 9</p>
+                <form class="add-to-cart" action="cart.html" method="post">
+                  <div>
+                    <label for="qty-1">Quantity</label>
+                    <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                  </div>
+                  <button class="button button-full button-assertive" type="submit" value="Add to cart">Add to cart</button>
+                </form>
+              </div>
+            </div><!-- end of item body -->
+          </div><!-- end of card -->
+          
+          <div class="list card">
+            <div class="item item-avatar">
+              <img src="images/wine3.jpg" alt="wine" />
+              <h2>Rose Wine</h2>
+              <p>Bubbly</p>
+            </div>
+          
+            <div class="item item-body">
+              <div class="product-image">
+                <img src="images/wine3.jpg" alt="wine" />
+              </div>
+              <p>
+                This is a "Cool" Rose Wine. Designed with Summer nights in mind. Smooth velvety taste laced with fruity tannins and
+                sumtuous oak. It will delight any party!
+              </p>
+              
+              <div class="product-description" data-name="Wine #1" data-price="5">
+                <h3 class="product-name">Rose from Italy</h3>
+                <p class="product-price">&euro; 7</p>
+                <form class="add-to-cart" action="cart.html" method="post">
+                  <div>
+                    <label for="qty-1">Quantity</label>
+                    <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                  </div>
+                  <button class="button button-full button-assertive" type="submit" value="Add to cart">Add to cart</button>
+                </form>
+              </div>
+            </div><!-- end of item body -->
+          </div><!-- end of card -->
+        
+        </div><!-- end of products -->
       </ion-content>
+      
+      <div class="bar bar-footer bar-dark">
+        <button class="button button-clear">Left</button>
+        <div class="title">&copy;Wine</div>
+        <button class="button button-clear">Right</button>
+      </div>
+            
     </ion-pane>
+    
   </body>
 </html>
